@@ -4,7 +4,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    min-height: 100vh;
     background-color: #f4f4f4;
     background-image: url('background.jpg'); /* 高品質な背景画像 */
     background-size: cover;
@@ -17,6 +17,8 @@ body {
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     text-align: center;
+    max-width: 800px;
+    margin: 20px;
 }
 
 header h1 {
@@ -44,6 +46,13 @@ main p {
     font-size: 1rem;
     margin-bottom: 2rem;
     color: #555;
+}
+
+.product-image {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 2rem;
+    border-radius: 10px;
 }
 
 #subscribe-form {
@@ -75,6 +84,31 @@ main p {
 
 #subscribe-form button:hover {
     background-color: #0056b3;
+}
+
+section {
+    margin: 2rem 0;
+}
+
+section h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #333;
+    border-bottom: 2px solid #007BFF;
+    display: inline-block;
+    padding-bottom: 0.5rem;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    background: #e2e2e2;
+    margin: 0.5rem 0;
+    padding: 0.5rem;
+    border-radius: 5px;
 }
 
 footer {
